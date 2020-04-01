@@ -118,7 +118,7 @@ for(key of mymap2)
 			startDate: mydates
 		});	
 
-
+		console.log(mydates)
 	}
 
 }
