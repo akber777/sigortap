@@ -11,8 +11,26 @@ $(document).ready(function(){
 
 	$( "#datepickerStart" ).datepicker({
 
-		startDate: date
+		startDate: date,
 	});
+
+
+
+
+	$("#datepickerStart").focus(function(){
+
+
+		let datestart=$( "#datepickerStart" ).val();
+
+
+		$( "#datepickerEnd" ).datepicker('setStartDate',datestart)
+
+
+
+		console.log(datestart)
+	})
+
+
 
 
 
@@ -26,6 +44,23 @@ $(document).ready(function(){
 		startDate: date2
 	});
 
+
+	
+
+	$( "#datepickerEnd" ).focus(function(){
+
+
+		let startDateNew=$( "#datepickerEnd" ).val()
+
+		$( "#datepickerStart" ).datepicker('setEndDate',startDateNew);
+
+
+	})
+
+
+
+
+	// -----------------
 
 
 
@@ -50,8 +85,6 @@ $(document).ready(function(){
 		if (index !== -1) {
 
 
-			console.log()
-
 			let myoldkeys=key[0][index] = parseDate;
 			
 			let thisMonth=new Date();
@@ -63,6 +96,9 @@ $(document).ready(function(){
 
 
 
+			$( "#datepickerBirthday" ).datepicker('setEndDate',date3);
+
+
 			$( "#datepickerBirthday" ).datepicker({
 				dateFormat:'dd-M-yy',
 				startDate: mydates
@@ -72,6 +108,7 @@ $(document).ready(function(){
 		}
 
 	}
+
 
 
 // end
@@ -100,8 +137,6 @@ for(key of mymap2)
 	if (index !== -1) {
 
 
-		console.log()
-
 		let myoldkeys=key[0][index] = parseDate;
 
 		let thisMonth=new Date();
@@ -112,16 +147,20 @@ for(key of mymap2)
 		let mydates=new Date(key[0][3],montIndex,key[0][2]);
 
 
+		$( "#tkBirthday" ).datepicker('setEndDate',date4);
 
 		$( "#tkBirthday" ).datepicker({
 			dateFormat:'dd-M-yy',
 			startDate: mydates
 		});	
 
-		console.log(mydates)
 	}
 
 }
+
+
+
+
 
 // end
 
