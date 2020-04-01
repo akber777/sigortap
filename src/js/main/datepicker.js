@@ -96,13 +96,13 @@ $(document).ready(function(){
 
 
 
-			$( "#datepickerBirthday" ).datepicker('setEndDate',date3);
-
-
 			$( "#datepickerBirthday" ).datepicker({
 				dateFormat:'dd-M-yy',
 				startDate: mydates
 			});
+
+
+			$( "#datepickerBirthday" ).datepicker('setEndDate',date3);
 
 
 		}
@@ -146,13 +146,13 @@ for(key of mymap2)
 
 		let mydates=new Date(key[0][3],montIndex,key[0][2]);
 
-
-		$( "#tkBirthday" ).datepicker('setEndDate',date4);
-
 		$( "#tkBirthday" ).datepicker({
 			dateFormat:'dd-M-yy',
 			startDate: mydates
 		});	
+
+
+		$( "#tkBirthday" ).datepicker('setEndDate',date4);
 
 	}
 
