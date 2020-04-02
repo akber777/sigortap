@@ -217,7 +217,18 @@ for(key of mymapyear)
 
 
 
+let dateyearnew = new Date();
 
+
+$("#kkYearOfProduction").datepicker({
+	format: "yyyy",
+	viewMode: "years", 
+	minViewMode: "years",
+});
+
+
+
+$( "#kkYearOfProduction" ).datepicker('setEndDate',dateyearnew);
 
 // end
 
