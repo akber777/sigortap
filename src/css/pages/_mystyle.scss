@@ -404,12 +404,12 @@ header{
 }
 
 .background_img_main{
- position: relative;
- float:left;
- width: 100%;
- border-radius: 4px;
- padding-bottom:67px;
- margin-bottom:67px;
+   position: relative;
+   float:left;
+   width: 100%;
+   border-radius: 4px;
+   padding-bottom:67px;
+   margin-bottom:67px;
 }
 
 
@@ -744,8 +744,8 @@ header{
 }
 
 .search_top{
-    position: absolute;
-    right: 0;
+    position: relative;
+    float: right;
     width: 142px;
     height: 51px;
     border-radius: 6px;
@@ -754,7 +754,7 @@ header{
     bottom: -25px;
 }
 
-.search_top button{
+.search_top input{
     height: 100%;
     display: flex;
     justify-content: center;
@@ -921,9 +921,9 @@ header{
 
 
 .one_div_slider{
- position: relative;
- float: left;
- width: calc(50% - 204px);
+   position: relative;
+   float: left;
+   width: calc(50% - 204px);
 }
 
 .one_div_slider:not(:first-child)
@@ -2087,11 +2087,11 @@ header{
 }
 
 .left_filter_end p{
- position: relative;
- float: left;
- width: 100%;
- margin-bottom: 20px;
- line-height: 25px;
+   position: relative;
+   float: left;
+   width: 100%;
+   margin-bottom: 20px;
+   line-height: 25px;
 }
 
 
@@ -2116,12 +2116,12 @@ header{
 }
 
 .right_left_end > span{
-   position: relative;
-   float: left;
-   width: 100%;
-   font-size: 20px;
-   color: #062232;
-   margin-bottom: 30px;
+ position: relative;
+ float: left;
+ width: 100%;
+ font-size: 20px;
+ color: #062232;
+ margin-bottom: 30px;
 }
 
 
@@ -2398,12 +2398,12 @@ section{
 }
 
 .write_message{
-   text-align: center;
-   width: 100%;
-   margin-top: 20px;
-   color: #062232;
-   font-size: 20px;
-   text-transform: uppercase;
+ text-align: center;
+ width: 100%;
+ margin-top: 20px;
+ color: #062232;
+ font-size: 20px;
+ text-transform: uppercase;
 }
 
 
@@ -2743,6 +2743,11 @@ section{
     margin-top:4px;
 }
 
+
+.invalidInputs{
+    border: 1px solid;
+    border-color:#fd0000 !important;
+}
 
 /*mobile menu end*/
 

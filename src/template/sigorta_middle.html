@@ -199,16 +199,16 @@
                                 <form id="travel_form" action="http://gocreative.com.tr/sigortap/sefer-sigortasi" method="GET">
                                     <ul class="full all_inputs_section1_ul">
                                         <li>
-                                            <input autocomplete="off" id="datepickerStart" type="text" value="" name="ss_travel_start" placeholder="Seyahet baslanqici">
+                                            <input class="required" autocomplete="off" id="datepickerStart" type="text" value="" name="ss_travel_start" placeholder="Seyahet baslanqici">
                                         </li>
                                         <li>
-                                            <input autocomplete="off" id="datepickerEnd" type="text" value="" name="ss_travel_end" placeholder="Seyahet bitis">
+                                            <input class="required" autocomplete="off" id="datepickerEnd" type="text" value="" name="ss_travel_end" placeholder="Seyahet bitis">
                                         </li>
                                         <li>
-                                            <input autocomplete="off" id="datepickerBirthday" type="text" value="" name="ss_birthday" placeholder="birthday">
+                                            <input class="required" autocomplete="off" id="datepickerBirthday" type="text" value="" name="ss_birthday" placeholder="birthday">
                                         </li>
                                         <li>
-                                            <select name="ss_insured_sum">
+                                            <select class="required" name="ss_insured_sum">
                                                 <option>Insured sum</option>
                                                 <option value="9">15000</option>
                                                 <option value="10">30000</option>
@@ -219,7 +219,7 @@
                                         </li>
 
                                         <li>
-                                            <select name="ss_coverage_territory">
+                                            <select class="required" name="ss_coverage_territory">
                                                 <option>Coverage territory</option>
                                                 <option value="1">Worldwide / Bütün dünya</option>
                                                 <option value="2">Worldwide (except USA, Canada, Australia, Japan) / Bütün dünya (ABŞ, Kanada, Avstraliya, Yaponiya istisna olmaqla)</option>
@@ -228,7 +228,7 @@
                                             </select>
                                         </li>
                                         <li>
-                                            <select name="ss_coverage_type">
+                                            <select class="required" name="ss_coverage_type">
                                                 <option>Coverage Type</option>
                                                 <option value="6">90 gün ərzində cəmi 30 gün</option>
                                                 <option value="7">180 gün ərzində cəmi 60 gün</option>
@@ -236,7 +236,7 @@
                                             </select>
                                         </li>
                                         <li>
-                                            <select name="ss_purpose_of_the_trip">
+                                            <select class="required" name="ss_purpose_of_the_trip">
                                                 <option>Purpose of the trip</option>
                                                 <option value="4">Tehsil</option>
                                                 <option value="5">Seyahet</option>
@@ -244,35 +244,35 @@
                                             </select>
                                         </li>
                                         <li>
-                                            <select name="ss_flight_delay">
+                                            <select class="required" name="ss_flight_delay">
                                                 <option>Flight delay</option>
                                                 <option value="ss_flight_delay_yes">Yes</option>
                                                 <option value="ss_flight_delay_no">No</option>
                                             </select>
                                         </li>
                                         <li>
-                                            <select name="ss_luggage_loss">
+                                            <select class="required" name="ss_luggage_loss">
                                                 <option>Luggage loss</option>
                                                 <option value="ss_luggage_loss_yes">Yes</option>
                                                 <option value="ss_luggage_loss_no">No</option>
                                             </select>
                                         </li>
                                         <li>
-                                            <select name="ss_document_loss">
+                                            <select class="required" name="ss_document_loss">
                                                 <option>Document loss</option>
                                                 <option value="ss_document_loss_yes">Yes</option>
                                                 <option value="ss_document_loss_no">No</option>
                                             </select>
                                         </li>
-
+                                        <li>
+                                            <input class="required" autocomplete="off" id="ekConstructionYear" type="text" value="" name="" placeholder="İl">
+                                        </li>
 
                                     </ul>
 
 
                                     <div class="search_top">
-                                        <button class="full">
-                                            Axtar
-                                        </button>
+                                        <input class="full" type="submit" value="AXTAR">
                                     </div>
 
 
