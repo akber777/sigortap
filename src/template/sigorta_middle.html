@@ -2,10 +2,10 @@
     <div class="full section_main_in">
         <div class="center_second">
             <div class="background_img_main">
-                <img src="http://gocreative.com.tr/sigortap/themes/sigortap/assets/img/back1.png" style="">
-                <img src="http://gocreative.com.tr/sigortap/themes/sigortap/assets/img/back2.jpg" style="display: none;">
-                <img src="http://gocreative.com.tr/sigortap/themes/sigortap/assets/img/back3.jpg" style="display: none;">
-                <img src="http://gocreative.com.tr/sigortap/themes/sigortap/assets/img/back4.jpg" style="display: none;">
+                <img src="http://sigortap.gocreative.com.tr/themes/sigortap/assets/img/back1.png" style="">
+                <img src="http://sigortap.gocreative.com.tr/themes/sigortap/assets/img/back2.jpg" style="display: none;">
+                <img src="http://sigortap.gocreative.com.tr/themes/sigortap/assets/img/back3.jpg" style="display: none;">
+                <img src="http://sigortap.gocreative.com.tr/themes/sigortap/assets/img/back4.jpg" style="display: none;">
 
                 <div class="center">
                     <div class="full pad_div">
@@ -13,10 +13,10 @@
 
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link  " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
 
                                         <button class="main_btn1 active_color">
-                                            <img src="http://gocreative.com.tr/sigortap/themes/sigortap/assets/img/icon1.png">
+                                            <img src="http://sigortap.gocreative.com.tr/themes/sigortap/assets/img/icon1.png">
                                         </button>
                                         <span class="full">
                                             Avto
@@ -24,9 +24,9 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                    <a class="nav-link " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
                                         <button class="main_btn1">
-                                            <img src="http://gocreative.com.tr/sigortap/themes/sigortap/assets/img/icon2.png">
+                                            <img src="http://sigortap.gocreative.com.tr/themes/sigortap/assets/img/icon2.png">
                                         </button>
                                         <span class="full">
                                             Əmlak
@@ -34,9 +34,9 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="pills-contact-tab" data-toggle="pill" href="#pills-travel" role="tab" aria-controls="pills-travel" aria-selected="true">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-travel" role="tab" aria-controls="pills-travel" aria-selected="false">
                                         <button class="main_btn1">
-                                            <img src="http://gocreative.com.tr/sigortap/themes/sigortap/assets/img/icon3.png">
+                                            <img src="http://sigortap.gocreative.com.tr/themes/sigortap/assets/img/icon3.png">
                                         </button>
                                         <span class="full">
                                             Səfər
@@ -46,7 +46,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link  " id="pills-medical-tab" data-toggle="pill" href="#pills-medical" role="tab" aria-controls="pills-medical" aria-selected="false">
                                         <button class="main_btn1">
-                                            <img src="http://gocreative.com.tr/sigortap/themes/sigortap/assets/img/icon4.png">
+                                            <img src="http://sigortap.gocreative.com.tr/themes/sigortap/assets/img/icon4.png">
                                         </button>
                                         <span class="full">
                                             Tibbi
@@ -56,7 +56,7 @@
                             </ul>
                         </div>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
                                 <!-- start -->
                                 <ul class="nav nav-pills mb-3 newTABS" id="pills-tab-avto" role="tablist">
@@ -69,11 +69,13 @@
                                 </ul>
                                 <div class="tab-content" id="pills-tabContent2">
                                     <div class="tab-pane fade show active" id="pills-home-kasko" role="tabpanel" aria-labelledby="pills-home-tab">
-                                        <form id="auto_konullu_form" action="http://gocreative.com.tr/sigortap/avtomobil-konullu-sigorta" method="GET">
+
+
+                                        <form id="auto_konullu_form" action="http://sigortap.gocreative.com.tr/avtomobil-konullu-sigorta" method="GET">
                                             <ul class="full all_inputs_section1_ul">
                                                 <li>
-                                                    <select id="carbrand__select" name="carbrand_id">
-                                                        <option>Marka</option>
+                                                    <select class="required" id="carbrand__select" name="carbrand_id">
+                                                        <option value="">Marka</option>
                                                         <option value="1">Fiat</option>
                                                         <option value="2">Ford</option>
                                                         <option value="3">BMW</option>
@@ -81,22 +83,26 @@
                                                 </li>
 
                                                 <li>
-                                                    <select id="carmodel__select" name="carmdl_id">
-                                                        <option>Model</option>
+                                                    <select class="required" id="carmodel__select" name="carmdl_id"><option value="">Model</option>
+
+                                                        <option value="1">Doblo</option>
+
+
+
                                                     </select>
                                                 </li>
 
                                                 <li>
-                                                    <input type="number" name="auto_market_price" placeholder="Bazar dəyəri">
+                                                    <input class="required" type="number" name="auto_market_price" value="" placeholder="Bazar dəyəri">
                                                 </li>
 
                                                 <li>
-                                                    <input type="number" name="year_of_production" placeholder="Ilı">
+                                                    <input  class="required" value="" type="number" id="kkYearOfProduction" name="year_of_production" placeholder="Ilı">
                                                 </li>
 
                                                 <li>
-                                                    <select id="parking_condition" name="parking_condition">
-                                                        <option>Saxlama Yeri</option>
+                                                    <select class="required" id="parking_condition" name="parking_condition">
+                                                        <option value="">Saxlama Yeri</option>
                                                         <option value="kk_parking_condition_garage">Garage or closed
                                                             parking
                                                         </option>
@@ -107,40 +113,40 @@
 
 
                                                 <li>
-                                                    <input type="number" name="age" placeholder="Sürücünün Yaşı">
+                                                    <input class="required" value="" type="number" name="age" placeholder="Sürücünün Yaşı">
                                                 </li>
                                                 <li>
-                                                    <input type="number" name="driving_experience" placeholder="Driving experience (years)">
+                                                    <input class="required" value="" type="number" name="driving_experience" placeholder="Driving experience (years)">
                                                 </li>
 
                                                 <li>
-                                                    <select id="offical_service_repair" name="offical_service_repair">
-                                                        <option>Offical Service Repair</option>
+                                                    <select class="required" id="offical_service_repair" name="offical_service_repair">
+                                                        <option value="">Offical Service Repair</option>
                                                         <option value="kk_offical_service_repair_yes">Yes</option>
                                                         <option value="kk_offical_service_repair_no">No</option>
                                                     </select>
                                                 </li>
                                                 <li>
-                                                    <select id="deductible" name="deductible">
-                                                        <option>Deductible</option>
-                                                        <option value="100">100</option>
-                                                        <option value="200">200</option>
-                                                        <option value="300">300</option>
-
+                                                    <select class="required" name="kk_deductible">
+                                                        <option value="">Deductible</option>
+                                                        <option value="51">100</option>
+                                                        <option value="52">200</option>
+                                                        <option value="53">300</option>
                                                     </select>
                                                 </li>
 
+
                                                 <li>
-                                                    <select id="risks_covered" name="risks_covered">
-                                                        <option>Risks Covered</option>
+                                                    <select class="required" id="risks_covered" name="risks_covered">
+                                                        <option value="">Risks Covered</option>
                                                         <option value="kk_risks_covered_full">Full Covered</option>
                                                         <option value="kk_risks_covered_only">Only Traffic Accident
                                                         </option>
                                                     </select>
                                                 </li>
                                                 <li>
-                                                    <select id="drivers_insured" name="drivers_insured">
-                                                        <option>Drivers Insured</option>
+                                                    <select class="required" id="drivers_insured" name="drivers_insured">
+                                                        <option value="">Drivers Insured</option>
                                                         <option value="kk_drivers_insured_any">Any Driver</option>
                                                         <option value="kk_drivers_insured_only">Only Insured</option>
                                                     </select>
@@ -165,9 +171,7 @@
                                             </div>
 
                                             <div class="search_top">
-                                                <button class="full">
-                                                    Axtar
-                                                </button>
+                                                <input class="full" type="submit" value="AXTAR">
                                             </div>
 
 
@@ -182,91 +186,108 @@
                                 <!-- end -->
 
                             </div>
-                            <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip
-                                dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt
-                                reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex
-                                labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip
-                                nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse
-                                irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore
-                                ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore
-                                aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa
-                                veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo
-                                voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit
-                                voluptate voluptate consequat non.
-                            </div>
-                            <div class="tab-pane fade active show" id="pills-travel" role="tabpanel" aria-labelledby="pills-travel-tab">
-                                <form id="travel_form" action="http://gocreative.com.tr/sigortap/sefer-sigortasi" method="GET">
+                            <div class="tab-pane fade  " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <form id="property_form" action="http://sigortap.gocreative.com.tr/emlak-sigortasi" method="GET">
                                     <ul class="full all_inputs_section1_ul">
+
                                         <li>
-                                            <input class="required" autocomplete="off" id="datepickerStart" type="text" value="" name="ss_travel_start" placeholder="Seyahet baslanqici">
-                                        </li>
-                                        <li>
-                                            <input class="required" autocomplete="off" id="datepickerEnd" type="text" value="" name="ss_travel_end" placeholder="Seyahet bitis">
-                                        </li>
-                                        <li>
-                                            <input class="required" autocomplete="off" id="datepickerBirthday" type="text" value="" name="ss_birthday" placeholder="birthday">
-                                        </li>
-                                        <li>
-                                            <select class="required" name="ss_insured_sum">
+                                            <select class="required" name="ek_insured_sum">
                                                 <option value="">Insured sum</option>
-                                                <option value="9">15000</option>
-                                                <option value="10">30000</option>
-                                                <option value="11">50000</option>
-                                                <option value="12">3000</option>
+                                                <option value="50000">50000</option>
+                                                <option value="100000">100000</option>
+                                                <option value="30000">30000</option>
 
                                             </select>
                                         </li>
 
                                         <li>
-                                            <select class="required" name="ss_coverage_territory">
-                                                <option value="">Coverage territory</option>
-                                                <option value="1">Worldwide / Bütün dünya</option>
-                                                <option value="2">Worldwide (except USA, Canada, Australia, Japan) / Bütün dünya (ABŞ, Kanada, Avstraliya, Yaponiya istisna olmaqla)</option>
-                                                <option value="3">Schengen / Şengen</option>
-
+                                            <select class="required" name="ek_risk">
+                                                <option value="">Risk Covered</option>
+                                                <option value="25">Base Coverage (Fire, Lightening and Explosion)</option>
+                                                <option value="26">Extended Coverage (Base + Internal water, Landslip, Eartquake etc)</option>
                                             </select>
                                         </li>
                                         <li>
-                                            <select class="required" name="ss_coverage_type">
-                                                <option value="">Coverage Type</option>
-                                                <option value="6">90 gün ərzində cəmi 30 gün</option>
-                                                <option value="7">180 gün ərzində cəmi 60 gün</option>
+                                            <select class="required" name="ek_deductible">
+                                                <option value="">Deductible</option>
+                                                <option value="27">1% of Sum Insured</option>
+                                                <option value="28">2% of Sum Insured</option>
+                                                <option value="29">3% of Sum Insured</option>
+                                            </select>
+                                        </li>
 
+
+                                        <li>
+                                            <select class="required" name="ek_material_main_walls">
+                                                <option value="">Material Main Walls</option>
+                                                <option value="30">Wood</option>
+                                                <option value="31">stone/brick</option>
+                                                <option value="32">concrete/metal</option>
                                             </select>
                                         </li>
                                         <li>
-                                            <select class="required" name="ss_purpose_of_the_trip">
-                                                <option value="">Purpose of the trip</option>
-                                                <option value="4">Tehsil</option>
-                                                <option value="5">Seyahet</option>
-
+                                            <select class="required" name="ek_material_roof">
+                                                <option value="">Material Roof</option>
+                                                <option value="33">wood</option>
+                                                <option value="34">stone/brick</option>
+                                                <option value="35">concrete/metal</option>
                                             </select>
                                         </li>
                                         <li>
-                                            <select class="required" name="ss_flight_delay">
+                                            <select class="required" name="ek_usage_type">
+                                                <option value="">Usage Type</option>
+                                                <option value="36">Residenatial</option>
+                                                <option value="37">Commercial</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select class="required" name="ek_heating_system">
+                                                <option value="">Heating System</option>
+                                                <option value="38">No Heating</option>
+                                                <option value="39">Centralized</option>
+                                                <option value="40">Electrical</option>
+                                                <option value="41">Boiler room</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select class="required" name="ek_fire_extinguishing_systems">
+                                                <option value="">Fire Extinguishing Systems</option>
+                                                <option value="42">Automatic fire extinguishing  system (sprinkler)</option>
+                                                <option value="43">Portative fire  extinguishers</option>
+                                                <option value="44">No system</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select class="required" name="ek_security_guard">
+                                                <option value="">Security Guard</option>
+                                                <option value="45">Security company</option>
+                                                <option value="46">By employees</option>
+                                                <option value="47">No guard</option>
+                                            </select>
+                                        </li>
+
+
+                                        <li>
+                                            <input class="required" autocomplete="off" id="ekConstructionYear" type="text" value="" name="ek_construction_year" placeholder="Construction Year">
+                                        </li>
+
+
+                                        <li>
+                                            <select class="required" name="ek_videosurveillance_system">
                                                 <option value="">Flight delay</option>
-                                                <option value="ss_flight_delay_yes">Yes</option>
-                                                <option value="ss_flight_delay_no">No</option>
+                                                <option value="ek_videosurveillance_system_yes">Yes</option>
+                                                <option value="ek_videosurveillance_system_no">No</option>
                                             </select>
                                         </li>
                                         <li>
-                                            <select class="required" name="ss_luggage_loss">
-                                                <option value="">Luggage loss</option>
-                                                <option value="ss_luggage_loss_yes">Yes</option>
-                                                <option value="ss_luggage_loss_no">No</option>
+                                            <select class="required" name="ek_security_system">
+                                                <option value="">Security System</option>
+                                                <option value="ek_security_system_yes">Yes</option>
+                                                <option value="ek_security_system_no">No</option>
                                             </select>
                                         </li>
-                                        <li>
-                                            <select class="required" name="ss_document_loss">
-                                                <option value="">Document loss</option>
-                                                <option value="ss_document_loss_yes">Yes</option>
-                                                <option value="ss_document_loss_no">No</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <input class="required" autocomplete="off" id="ekConstructionYear" type="text" value="" name="" placeholder="İl">
-                                        </li>
+
+
 
                                     </ul>
 
@@ -276,122 +297,199 @@
                                     </div>
 
 
-                                </form>
+                                </form>                            </div>
+                                <div class="tab-pane fade" id="pills-travel" role="tabpanel" aria-labelledby="pills-travel-tab">
+                                    <form id="travel_form" action="http://sigortap.gocreative.com.tr/sefer-sigortasi" method="GET">
+                                        <ul class="full all_inputs_section1_ul">
+                                            <li>
+                                                <input class="required" autocomplete="off" id="datepickerStart" type="text" value="" name="ss_travel_start" placeholder="Seyahet baslanqici">
+                                            </li>
+                                            <li>
+                                                <input class="required" autocomplete="off" id="datepickerEnd" type="text" value="" name="ss_travel_end" placeholder="Seyahet bitis">
+                                            </li>
+                                            <li>
+                                                <input class="required" autocomplete="off" id="datepickerBirthday" type="text" value="" name="ss_birthday" placeholder="birthday">
+                                            </li>
+                                            <li>
+                                                <select class="required" name="ss_insured_sum">
+                                                    <option value="">Insured sum</option>
+                                                    <option value="9">15000</option>
+                                                    <option value="10">30000</option>
+                                                    <option value="11">50000</option>
 
-                            </div>
-                            <div class="tab-pane fade  " id="pills-medical" role="tabpanel" aria-labelledby="pills-medical-tab">
-                                <form id="medical_form" action="http://gocreative.com.tr/sigortap/tibbi-sigorta" method="GET">
-                                    <ul class="full all_inputs_section1_ul">
+                                                </select>
+                                            </li>
 
+                                            <li>
+                                                <select class="required" name="ss_coverage_territory">
+                                                    <option value="">Coverage territory</option>
+                                                    <option value="1">Worldwide / Bütün dünya</option>
+                                                    <option value="2">Worldwide (except USA, Canada, Australia, Japan) / Bütün dünya (ABŞ, Kanada, Avstraliya, Yaponiya istisna olmaqla)</option>
+                                                    <option value="3">Schengen / Şengen</option>
 
-                                        <li>
-                                            <select required="" name="tk_insured_sum">
-                                                <option>Insured sum</option>
-                                                <option value="3000">3000</option>
-                                                <option value="5000">5000</option>
-                                                <option value="10000">10000</option>
-                                                
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <select name="tk_occupation">
-                                                <option>Occupation</option>
-                                                <option value="13">White collar</option>
-                                                <option value="14">Blue collar</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="ss_coverage_type">
+                                                    <option value="">Coverage Type</option>
+                                                    <option value="6">90 gün ərzində cəmi 30 gün</option>
+                                                    <option value="7">180 gün ərzində cəmi 60 gün</option>
 
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <select name="tk_deductible">
-                                                <option>Deductible</option>
-                                                <option value="15">0 %</option>
-                                                <option value="16">10 %</option>
-                                                <option value="17">20 %</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="ss_purpose_of_the_trip">
+                                                    <option value="">Purpose of the trip</option>
+                                                    <option value="4">Tehsil</option>
+                                                    <option value="5">Seyahet</option>
 
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <select name="tk_visit_doctor">
-                                                <option>Visit Doctor</option>
-                                                <option value="18">No visit during last year</option>
-                                                <option value="19">1 to 2 visits a year</option>
-                                                <option value="20">3 to 6 visits a year</option>
-                                                <option value="21">More than 6 times a year</option>
-
-                                            </select>
-                                        </li>
-
-                                        <li>
-                                            <select name="tk_chronic_diseases">
-                                                <option>Chronic Diseases</option>
-                                                <option value="tk_chronic_diseases_yes">Yes</option>
-                                                <option value="tk_chronic_diseases_no">No</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <select name="tk_inpatient_treatment">
-                                                <option>Inpatient Treatment</option>
-                                                <option value="tk_inpatient_treatment_yes">Yes</option>
-                                                <option value="tk_inpatient_treatment_no">No</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <select name="tk_emergancy">
-                                                <option>Emergancy</option>
-                                                <option value="tk_emergancy_yes">Yes</option>
-                                                <option value="tk_emergancy_no">No</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <select name="tk_medicaments">
-                                                <option>Medicaments</option>
-                                                <option value="tk_medicaments_yes">Yes</option>
-                                                <option value="tk_medicaments_no">No</option>
-                                            </select>
-                                        </li>
-
-                                        <li>
-                                            <select name="tk_dental">
-                                                <option>Dental</option>
-                                                <option value="tk_dental_yes">Yes</option>
-                                                <option value="tk_dental_no">No</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <select name="tk_annual_examination">
-                                                <option>Annual Examination</option>
-                                                <option value="tk_annual_examination_yes">Yes</option>
-                                                <option value="tk_annual_examination_no">No</option>
-                                            </select>
-                                        </li>
-
-                                        <li>
-                                            <input id="tkBirthday" value="" type="text" name="tk_birthday" placeholder="birthday">
-                                        </li>
-
-                                    </ul>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="ss_flight_delay">
+                                                    <option value="">Flight delay</option>
+                                                    <option value="ss_flight_delay_yes">Yes</option>
+                                                    <option value="ss_flight_delay_no">No</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="ss_luggage_loss">
+                                                    <option value="">Luggage loss</option>
+                                                    <option value="ss_luggage_loss_yes">Yes</option>
+                                                    <option value="ss_luggage_loss_no">No</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="ss_document_loss">
+                                                    <option value="">Document loss</option>
+                                                    <option value="ss_document_loss_yes">Yes</option>
+                                                    <option value="ss_document_loss_no">No</option>
+                                                </select>
+                                            </li>
 
 
-                                    <div class="search_top">
-                                        <button class="full">
-                                            Axtar
-                                        </button>
-                                    </div>
+                                        </ul>
 
 
-                                </form>
+                                        <div class="search_top">
+                                            <input class="full" type="submit" value="AXTAR">
+                                        </div>
 
+
+                                    </form>
+
+                                </div>
+                                <div class="tab-pane fade  " id="pills-medical" role="tabpanel" aria-labelledby="pills-medical-tab">
+                                    <form id="medical_form" action="http://sigortap.gocreative.com.tr/tibbi-sigorta" method="GET">
+                                        <ul class="full all_inputs_section1_ul">
+
+
+                                            <li>
+                                                <select class="required" name="tk_insured_sum">
+                                                    <option value="">Insured sum</option>
+                                                    <option value="3000">3000</option>
+                                                    <option value="5000">5000</option>
+                                                    <option value="10000">10000</option>
+
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="tk_occupation">
+                                                    <option value="">Occupation</option>
+                                                    <option value="13">White collar</option>
+                                                    <option value="14">Blue collar</option>
+
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="tk_deductible">
+                                                    <option value="">Deductible</option>
+                                                    <option value="15">0 %</option>
+                                                    <option value="16">10 %</option>
+                                                    <option value="17">20 %</option>
+
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="tk_visit_doctor">
+                                                    <option value="">Visit Doctor</option>
+                                                    <option value="18">No visit during last year</option>
+                                                    <option value="19">1 to 2 visits a year</option>
+                                                    <option value="20">3 to 6 visits a year</option>
+                                                    <option value="21">More than 6 times a year</option>
+
+                                                </select>
+                                            </li>
+
+                                            <li>
+                                                <select class="required" name="tk_chronic_diseases">
+                                                    <option value="">Chronic Diseases</option>
+                                                    <option value="tk_chronic_diseases_yes">Yes</option>
+                                                    <option value="tk_chronic_diseases_no">No</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="tk_inpatient_treatment">
+                                                    <option value="">Inpatient Treatment</option>
+                                                    <option value="tk_inpatient_treatment_yes">Yes</option>
+                                                    <option value="tk_inpatient_treatment_no">No</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="tk_emergancy">
+                                                    <option value="">Emergancy</option>
+                                                    <option value="tk_emergancy_yes">Yes</option>
+                                                    <option value="tk_emergancy_no">No</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="tk_medicaments">
+                                                    <option value="">Medicaments</option>
+                                                    <option value="tk_medicaments_yes">Yes</option>
+                                                    <option value="tk_medicaments_no">No</option>
+                                                </select>
+                                            </li>
+
+                                            <li>
+                                                <select class="required" name="tk_dental">
+                                                    <option value="">Dental</option>
+                                                    <option value="tk_dental_yes">Yes</option>
+                                                    <option value="tk_dental_no">No</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <select class="required" name="tk_annual_examination">
+                                                    <option value="">Annual Examination</option>
+                                                    <option value="tk_annual_examination_yes">Yes</option>
+                                                    <option value="tk_annual_examination_no">No</option>
+                                                </select>
+                                            </li>
+
+                                            <li>
+                                                <input autocomplete="off" class="required" id="tkBirthday" value="" type="text" name="tk_birthday" placeholder="birthday">
+                                            </li>
+
+                                        </ul>
+
+
+                                        <div class="search_top">
+                                            <input class="full" type="submit" value="AXTAR">
+                                        </div>
+
+
+                                    </form>
+
+                                </div>
                             </div>
                         </div>
+                        <!-- end -->
                     </div>
-                    <!-- end -->
                 </div>
+                <!-- center end -->
+
             </div>
-            <!-- center end -->
-
+            <!-- background_img_main end -->
         </div>
-        <!-- background_img_main end -->
-    </div>
-    <!-- center_second end -->
+        <!-- center_second end -->
 
-</section>
+    </section>
