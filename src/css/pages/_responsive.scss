@@ -38,10 +38,10 @@
     }
     
     .one_div_slider {
-     width: calc(50% - 385px);
- }
+       width: calc(50% - 385px);
+   }
 
- .slider_div .item{
+   .slider_div .item{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -185,10 +185,10 @@
 @media(max-width:1110px)
 {
     .right_filter select{
-       font-size: 13px;
-       padding: 0px 7px;
-       width:175px;
-   }
+     font-size: 13px;
+     padding: 0px 7px;
+     width:175px;
+ }
 }
 
 
@@ -274,7 +274,7 @@
     }
 
     .all_inputs_section1_ul li select{
-        background-size: 6% 13%;
+        background-size: 1% 13%;
     }
 
     .none_slider{
@@ -646,11 +646,11 @@
     }
 
     .all_inputs_section1_ul li select{
-       font-size:12px;
-   }
+     font-size:12px;
+ }
 
-   .all_inputs_section1_ul  li input::placeholder
-   {
+ .all_inputs_section1_ul  li input::placeholder
+ {
     font-size:12px;
 }
 
@@ -1000,6 +1000,16 @@
 
     .header_image img {
         width: 100px;
+    }
+
+
+    .header_div{
+        padding: 15px 20px;
+    }
+
+    .pad_div{
+        padding: 0 11px;
+
     }
 
 }
