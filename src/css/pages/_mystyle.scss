@@ -404,12 +404,12 @@ header{
 }
 
 .background_img_main{
- position: relative;
- float:left;
- width: 100%;
- border-radius: 4px;
- padding-bottom:67px;
- margin-bottom:67px;
+   position: relative;
+   float:left;
+   width: 100%;
+   border-radius: 4px;
+   padding-bottom:67px;
+   margin-bottom:67px;
 }
 
 
@@ -923,9 +923,9 @@ header{
 
 
 .one_div_slider{
- position: relative;
- float: left;
- width: calc(50% - 204px);
+   position: relative;
+   float: left;
+   width: calc(50% - 204px);
 }
 
 .one_div_slider:not(:first-child)
@@ -2107,11 +2107,11 @@ header{
 }
 
 .left_filter_end p{
- position: relative;
- float: left;
- width: 100%;
- margin-bottom: 20px;
- line-height: 25px;
+   position: relative;
+   float: left;
+   width: 100%;
+   margin-bottom: 20px;
+   line-height: 25px;
 }
 
 
@@ -2136,12 +2136,12 @@ header{
 }
 
 .right_left_end > span{
-   position: relative;
-   float: left;
-   width: 100%;
-   font-size: 20px;
-   color: #062232;
-   margin-bottom: 30px;
+ position: relative;
+ float: left;
+ width: 100%;
+ font-size: 20px;
+ color: #062232;
+ margin-bottom: 30px;
 }
 
 
@@ -2425,12 +2425,12 @@ section{
 }
 
 .write_message{
-   text-align: center;
-   width: 100%;
-   margin-top: 20px;
-   color: #062232;
-   font-size: 20px;
-   text-transform: uppercase;
+ text-align: center;
+ width: 100%;
+ margin-top: 20px;
+ color: #062232;
+ font-size: 20px;
+ text-transform: uppercase;
 }
 
 
@@ -2798,7 +2798,7 @@ section{
 
 .all_inputs_section1_ul input
 {   
-   -moz-appearance: textfield !important;
+ -moz-appearance: textfield !important;
 }
 
 
@@ -2814,29 +2814,82 @@ input[type=number]::-webkit-inner-spin-button{
 
 
 .ageBtnUp{
- position: absolute;
- width: 10px;
- height: 5px;
- top: 20px;
- right: 25px;
- background: url(../../img/selected_icon.png) no-repeat;
- background-size: 100% 100%;
- transform: rotate(180deg);
+   position: absolute;
+   width: 10px;
+   height: 5px;
+   top: 20px;
+   right: 25px;
+   background: url(../../img/selected_icon.png) no-repeat;
+   background-size: 100% 100%;
+   transform: rotate(180deg);
 }
 
 
 
 .ageBtnDown{
- position: absolute;
- width: 10px;
- height: 5px;
- bottom: 20px;
- right: 25px;
- background: url(../../img/selected_icon.png) no-repeat;
- background-size: 100% 100%;
+   position: absolute;
+   width: 10px;
+   height: 5px;
+   bottom: 20px;
+   right: 25px;
+   background: url(../../img/selected_icon.png) no-repeat;
+   background-size: 100% 100%;
 }
 
 
+.myPopup_filter{
+    position: absolute;
+    right: 35px;
+    top: -21px;
+    width: 217px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:6px;
+    flex-direction: column;
+    padding: 23px 10px;
+    z-index: 500;
+    border:1px solid #000;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.myPopup_filter span{
+    text-align: center;
+    color: #000;
+}
+
+
+.myPopup_filter button:not(.closemyPopup){
+    background-color:#f7c97a;
+    text-align: center;
+    width: 50%;
+    border-radius:2px;
+    padding:5px;
+    color: #fff;
+    margin-top:10px;
+}
+
+
+
+.myPopup_filterShow{
+    opacity: 1;
+    z-index: 550;
+}
+
+
+
+.closemyPopup{
+    position: absolute;
+    right: 8px;
+    top: 2px;
+    background-color: transparent;
+}
 
 
 /*mobile menu end*/
