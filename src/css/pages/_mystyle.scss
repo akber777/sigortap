@@ -404,12 +404,12 @@ header{
 }
 
 .background_img_main{
-   position: relative;
-   float:left;
-   width: 100%;
-   border-radius: 4px;
-   padding-bottom:67px;
-   margin-bottom:67px;
+ position: relative;
+ float:left;
+ width: 100%;
+ border-radius: 4px;
+ padding-bottom:67px;
+ margin-bottom:67px;
 }
 
 
@@ -923,9 +923,9 @@ header{
 
 
 .one_div_slider{
-   position: relative;
-   float: left;
-   width: calc(50% - 204px);
+ position: relative;
+ float: left;
+ width: calc(50% - 204px);
 }
 
 .one_div_slider:not(:first-child)
@@ -1107,9 +1107,26 @@ header{
     margin-bottom: 15px;
 }
 
+
+.float_footer_div_in ul li:not(:first-child){
+
+    margin-bottom: 15px;
+}
+
+
+.float_footer_div_in ul li:not(:first-child) a{
+
+    font-size: 15px;
+    width: 80%;
+}
+
 .float_footer_div_in li a{
     color: #fff;
+
 }
+
+
+
 
 .float_footer_div_in li:first-child{
     font-size: 18px;
@@ -1939,6 +1956,7 @@ header{
     align-items: center;
     padding-left: 20px;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 .left_filter_middle > span:not(:first-child)
@@ -1957,7 +1975,7 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    display:none;
+    margin-top: 7px;
 }
 
 
@@ -2004,7 +2022,7 @@ header{
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 100px;
     height: 28px;
     border-radius: 5px;
     background-color: #4e8fc6;
@@ -2019,19 +2037,19 @@ header{
 }
 
 .li_button_end button {
-    position: relative;
-    float: left;
-    width: 50%;
-    height: 100%;
-    background-color: transparent;
-    color: #fff;
-    font-size: 16px;
-    background-position: right 8px center;
-    background-repeat: no-repeat;
-    background-image: url(../../img/down.png);
+    position: relative !important;
+    float: left !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: transparent !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    background-position: right 16px center !important;
+    background-repeat: no-repeat !important;
+    background-image: url(../../img/down.png) !important;
     /* background: firebrick; */
-    cursor: pointer;
-    text-transform:capitalize;
+    cursor: pointer !important;
+    text-transform:capitalize !important;
 }
 
 .left_img_filter:after{
@@ -2089,11 +2107,11 @@ header{
 }
 
 .left_filter_end p{
-   position: relative;
-   float: left;
-   width: 100%;
-   margin-bottom: 20px;
-   line-height: 25px;
+ position: relative;
+ float: left;
+ width: 100%;
+ margin-bottom: 20px;
+ line-height: 25px;
 }
 
 
@@ -2118,12 +2136,12 @@ header{
 }
 
 .right_left_end > span{
- position: relative;
- float: left;
- width: 100%;
- font-size: 20px;
- color: #062232;
- margin-bottom: 30px;
+   position: relative;
+   float: left;
+   width: 100%;
+   font-size: 20px;
+   color: #062232;
+   margin-bottom: 30px;
 }
 
 
@@ -2399,13 +2417,20 @@ section{
     cursor: pointer;
 }
 
+
+
+.filter_section .fafa_font2 span{
+    font-size: 20px;
+    margin-top: 6px;
+}
+
 .write_message{
- text-align: center;
- width: 100%;
- margin-top: 20px;
- color: #062232;
- font-size: 20px;
- text-transform: uppercase;
+   text-align: center;
+   width: 100%;
+   margin-top: 20px;
+   color: #062232;
+   font-size: 20px;
+   text-transform: uppercase;
 }
 
 
@@ -2435,6 +2460,24 @@ section{
     background-color:transparent;
     color:#4e90c7;
     font-size:20px
+}
+
+
+.filter_section .right_top_filter a:last-child{
+    margin-right: 0px;
+    background-color:transparent;
+    color:#fff;
+    font-size:14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.filter_section .right_top_filter{
+
+    background-color:#f7c97a;
+    border-radius: 6px;
 }
 
 .police_area{
@@ -2755,7 +2798,7 @@ section{
 
 .all_inputs_section1_ul input
 {   
- -moz-appearance: textfield !important;
+   -moz-appearance: textfield !important;
 }
 
 
@@ -2771,26 +2814,26 @@ input[type=number]::-webkit-inner-spin-button{
 
 
 .ageBtnUp{
-   position: absolute;
-   width: 10px;
-   height: 5px;
-   top: 20px;
-   right: 25px;
-   background: url(../../img/selected_icon.png) no-repeat;
-   background-size: 100% 100%;
-   transform: rotate(180deg);
+ position: absolute;
+ width: 10px;
+ height: 5px;
+ top: 20px;
+ right: 25px;
+ background: url(../../img/selected_icon.png) no-repeat;
+ background-size: 100% 100%;
+ transform: rotate(180deg);
 }
 
 
 
 .ageBtnDown{
-   position: absolute;
-   width: 10px;
-   height: 5px;
-   bottom: 20px;
-   right: 25px;
-   background: url(../../img/selected_icon.png) no-repeat;
-   background-size: 100% 100%;
+ position: absolute;
+ width: 10px;
+ height: 5px;
+ bottom: 20px;
+ right: 25px;
+ background: url(../../img/selected_icon.png) no-repeat;
+ background-size: 100% 100%;
 }
 
 
