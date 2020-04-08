@@ -1,3 +1,61 @@
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
 	background-color: #f7c97b;
 }
+
+
+
+@media (max-width: 762px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 100%;
+	}
+
+}
+
+
+
+@media (min-width: 1300px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1180px;
+	}
+
+}
+
+
+
+@media (min-width: 1458px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1240px;
+	}
+
+}
+
+@media (min-width: 1500px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1300px;
+	}
+
+}
+
+
+@media (min-width: 1700px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1378px;
+	}
+
+}
+
+
+@media (min-width: 1920px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1478px;
+	}
+
+}
+
+
+
+
+
+
+
+

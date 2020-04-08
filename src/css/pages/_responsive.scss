@@ -128,6 +128,17 @@
     bottom: -43px;
 }
 
+
+
+.slider_left_img{
+    width: 100%;
+}
+
+
+.slider_right_word{
+    width: 100%;
+}
+
 }
 
 
@@ -259,7 +270,7 @@
     }
 }
 
-@media(max-width:968px)
+@media(max-width:992px)
 {
     .section1_ul li:not(:first-child) {
         margin-left: 100px;
@@ -439,7 +450,7 @@
 }
 
 
-@media(max-width:814px)
+@media(max-width:992px)
 {   
     .left_footer_div{
         width:100%;
@@ -655,11 +666,11 @@
 }
 
 
-.social_ul li a {
-    padding-right: 20px;
-    padding-left: 42px;
-    font-size:11px;
-}
+// .social_ul li a {
+//     padding-right: 20px;
+//     padding-left: 42px;
+//     font-size:11px;
+// }
 
 }
 
@@ -693,6 +704,30 @@
 }
 
 
+
+@media(max-width:610px)
+{
+    .social_ul li{
+        width: 100%;
+        margin-right: 0 !important;
+        
+        a{
+            justify-content: center;
+
+            i{
+                margin-right: 15px;
+            }
+        }
+
+
+    }
+
+
+
+
+}
+
+
 @media(max-width:592px)
 {
     .header_image img {
@@ -707,6 +742,12 @@
 
     .buttons_login li button{
         height: 25px;
+    }
+
+
+    .buttons_login li button{
+        width:100%;
+        font-size:12px;
     }
 
 }
@@ -757,10 +798,6 @@
         align-items:center;
     }
 
-    .buttons_login li button{
-        width:100%;
-        font-size:12px;
-    }
 
     .buttons_login li{
         width:calc(100% / 3);
@@ -782,9 +819,9 @@
         padding: 0 15px;
     }
 
-    .close_login{
-        right:-14px;
-    }
+    // .close_login{
+    //     right:-14px;
+    // }
 
 
     .fa_div_police .fafa_font2 span{
@@ -885,6 +922,12 @@
 
     .input_search_middle {
         width: 60%;
+    }
+
+
+    .buttons_login li{
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
@@ -1023,10 +1066,10 @@
     }
     
     
-    .close_login {
-        right: -1px;
-        top:0;
-    }
+    // .close_login {
+    //     right: -1px;
+    //     top:0;
+    // }
 
 
     .close_login button{

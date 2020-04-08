@@ -12,12 +12,8 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owl/owl.theme.default.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/stars/star-rating.css">
-    <link rel="stylesheet" href="libs/stars/star-rating.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main/main.min.css">
@@ -27,212 +23,301 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div class="full background_top">
 
-            <!-- start popup -->
-
-            <div class="back_color_police">
-                <div class="center_police">
-                    <div class="close_police">
-                        <button></button>
-                    </div>
-                    <span class="full price_police">QİYMƏTLƏNDİRİN</span>
-                    <div class="full fa_div_police">
-                        <div class="fafa_font2">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <span class="full write_message">MESAJINIZ
-                        </span>
-                        <div class="full">
-                            <form class="full" action="">
-                                <textarea class="police_area"></textarea>
-                            </form>
-                            <button class="submit_form_police">GÖNDƏR</button>
-                        </div>
-                    </div>
+        <div class="register__popup">
+            <div class="login_in">
+                <div class="close_login">
+                    <button></button>
                 </div>
-            </div>
+                <!-- close login end -->
+                <div class="full">
+                    <div class="center_login">
+                        <form class="full" action="">
+                            <div class="center_in_div">
+                                <span class="full">Qeydiyyatdan Kecin</span>
+                                <div class="login_input">
 
-
-            <!-- start popup end -->
-
-            <!-- login -->
-
-            <div class="back_login_color">
-                <div class="login_in">
-                    <div class="close_login">
-                        <button></button>
-                    </div>
-                    <!-- close login end -->
-                    <div class="full">
-                        <div class="center_login">
-                            <form class="full" action="">
-                                <div class="center_in_div">
-                                    <span class="full">Şəxsi kabinetə daxil olun!</span>
-                                    <div class="login_input">
-
-                                        <ul class="full login_ul">
-                                            <li>
-                                                <input type="text" name="" placeholder="Login">
-                                            </li>
-                                            <li>
-                                                <input type="password" name="" placeholder="Şifrə">
-                                            </li>
-                                        </ul>
-                                        <div class="full check_login">
-                                            <label>
-                                                <input type="checkbox" name="#">
-                                                <span>Məni xatırla</span>
-                                            </label>
-
-                                            <label>
-                                                <input type="checkbox" name="#">
-                                                <span>Şifrəmi unutdum</span>
-                                            </label>
-                                        </div>
+                                    <ul class="full login_ul">
+                                        <li>
+                                            <input type="text" name="" placeholder="Ad Soyad">
+                                        </li>
+                                        <li>
+                                            <input type="email" name="" placeholder="Email">
+                                        </li>
+                                        <li>
+                                            <input type="password" name="" placeholder="Şifrə">
+                                        </li>
+                                        <li>
+                                            <input type="password" name="" placeholder="Şifrə Tekrar">
+                                        </li>
+                                    </ul>
+                                    <div class="full check_login">
+                                        <label>
+                                            <input type="checkbox" name="#">
+                                            <span>Siz qeydiyyatdan kecerey Şertleri qebul etmis sayilirsiniz</span>
+                                        </label>
                                     </div>
-                                    <!-- login_input end -->
-                                    <div class="full login_last_div">
-                                        <span class="full">SOSIAL ŞƏBƏKƏ HESABLARI İLƏ DAXİL OLUN</span>
-                                        <div class="full">
-                                            <ul class="full social_ul">
-                                                <li>
-                                                    <a class="fb_a" href="#">Sign In with Facebook</a>
-                                                </li>
-                                                <li>
-                                                    <a class="google_a" href="#">
-                                                        Sign In with Google+
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="full buttons_login">
-                                            <ul class="full buttons_login">
-                                                <li>
-                                                    <button class="sign_button">
-                                                        DAXİL OL
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="sign_up_btn">
-                                                        QEYDIYYAT
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="agent_btn">
-                                                        AGENT OL
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- login_last_div end -->
                                 </div>
-                            </form>
-                            <!-- form end -->
+                                <!-- login_input end -->
+                                <div class="full buttons_login">
+                                    <ul class="full buttons_login">
+                                        <li>
+                                            <button class="sign_up_btn">
+                                                QEYDIYYAT
+                                            </button>
+                                        </li>
+                                        <li class="display_register">
+                                            <button class="agent_btn">
+                                                AGENT OL
+                                            </button>
+                                        </li>
+                                        <li class="display_register">
+                                            <button class="agent_btn">
+                                                AGENT OL
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="full register__end--bottom">
+                                    <span>
+                                        Hesabin var?
+                                    </span>
+                                    <a href="#" title="" class="registrTOSign">
+                                     Daxil ol
+                                 </a>
+                                 <span class="resgister_or">ve ya</span>
+                                 <a class="agent_sigorta" href="#" title="">Agent ol</a>
+                             </div>
+                         </div>
+                         <!-- login_last_div end -->
+                     </div>
+                 </form>
+                 <!-- form end -->
 
-                            <!-- center_in_div end -->
+                 <!-- center_in_div end -->
 
+             </div>
+             <!-- center_login end -->
+         </div>
+         <!-- close login end -->
+
+     </div>
+ </div>
+
+
+ <!-- login end -->
+
+
+ <div class="full background_top">
+
+    <!-- start popup -->
+
+    <div class="back_color_police">
+        <div class="center_police">
+            <div class="close_police">
+                <button></button>
+            </div>
+            <span class="full price_police">QİYMƏTLƏNDİRİN</span>
+            <div class="full fa_div_police">
+                <div class="fafa_font2">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="full write_message">MESAJINIZ
+                </span>
+                <div class="full">
+                    <form class="full" action="">
+                        <textarea class="police_area"></textarea>
+                    </form>
+                    <button class="submit_form_police">GÖNDƏR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start popup end -->
+
+    <!-- login -->
+    <div class="back_login_color">
+        <div class="login_in">
+            <div class="close_login">
+                <button></button>
+            </div>
+            <!-- close login end -->
+            <div class="full">
+                <div class="center_login">
+                    <form class="full" action="">
+                        <div class="center_in_div">
+                            <span class="full">Şəxsi kabinetə daxil olun!</span>
+                            <div class="login_input">
+
+                                <ul class="full login_ul">
+                                    <li>
+                                        <input type="text" name="" placeholder="Login">
+                                    </li>
+                                    <li>
+                                        <input type="password" name="" placeholder="Şifrə">
+                                    </li>
+                                </ul>
+                                <div class="full check_login">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span>Məni xatırla</span>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span>Şifrəmi unutdum</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- login_input end -->
+                            <div class="full login_last_div">
+                                <span class="full">SOSIAL ŞƏBƏKƏ HESABLARI İLƏ DAXİL OLUN</span>
+                                <div class="full">
+                                    <ul class="full social_ul">
+                                        <li class="tg-facebook">
+                                            <a href="http://sigortap.local/flynsarmy/sociallogin/Facebook" class="facebook">
+                                                <i class="fa  fa-facebook"></i>
+                                                <span>Sign in with <strong>“Facebook”</strong></span>
+                                            </a>
+                                        </li>
+                                        <li class="tg-googleplus">
+                                            <a href="http://sigortap.local/flynsarmy/sociallogin/Google" class="google">
+                                                <i class="fa  fa-google-plus"></i>
+                                                <span>Sign in with <strong>“Google”</strong></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="full buttons_login">
+                                    <ul class="full buttons_login">
+                                        <li>
+                                            <button class="sign_button">
+                                                DAXİL OL
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="sign_up_btn">
+                                                QEYDIYYAT
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="agent_btn">
+                                                AGENT OL
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- login_last_div end -->
                         </div>
-                        <!-- center_login end -->
-                    </div>
-                    <!-- close login end -->
+                    </form>
+                    <!-- form end -->
+
+                    <!-- center_in_div end -->
 
                 </div>
+                <!-- center_login end -->
             </div>
-
-
-            <!-- login end -->
-
-            <div class="center">
-                <div class="center_left_top">
-                    <a href="mailto:info@sigortap.com">
-                        <span class="left_center_top">
-                            info@sigortap.com
-                        </span>
-                    </a>
-                    <a href="Tel:+994 55 555 44 22">
-                        <span class="left_center_top2">
-                            +99 455 555 44 22
-                        </span>
-                    </a>
-                </div>
-                <div class="center_right_top">
-                    <ul class="center_top_ul">
-                        <li>
-                            <a class="sign_in" href="#">Daxil ol</a>
-                        </li>
-
-                        <li>
-                            <a class="sign" href="#">Qeydiyyatdan keç</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <!-- close login end -->
 
         </div>
-        <div class="full header_div">
-            <div class="center_second">
-                <div class="full">
+    </div>
 
 
-                    <div class="mobile_menu_card">
+    <!-- login end -->
 
-                        <div class="mobile_close">
-                            <button>
+    <div class="container">
+        <div class="center_left_top">
+            <a href="mailto:info@sigortap.com">
+                <span class="left_center_top">
+                    info@sigortap.com
+                </span>
+            </a>
+            <a href="Tel:+994 55 555 44 22">
+                <span class="left_center_top2">
+                    +99 455 555 44 22
+                </span>
+            </a>
+        </div>
+        <div class="center_right_top">
+            <ul class="center_top_ul">
+                <li>
+                    <a class="sign_in" href="#">Daxil ol</a>
+                </li>
 
-                            </button>
+                <li>
+                    <a class="sign" href="#">Qeydiyyatdan keç</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="full header_div">
+    <div class="center_second">
+        <div class="full">
+
+
+            <div class="mobile_menu_card">
+
+                <div class="mobile_close">
+                    <button>
+
+                    </button>
+                </div>
+
+                <ul class="header_ul">
+                    <li><a href="#">Onlayn sığorta</a></li>
+                    <li><a href="#">Faydalı</a></li>
+                    <li><a href="#">Əlaqə</a></li>
+                </ul>  
+
+            </div>
+            <div class="header_image">
+
+            </div>
+            <div class="container">
+                <header class="full">
+                    <div class="header_image">
+                        <a href="#"><img src="img/logo_new.jpg"></a>
+                    </div>
+                    <div class="header_right">
+
+
+                        <ul class="full header_right_ul">
+                            <li>
+                                <button class="header_button"></button>
+                            </li>
+                            <li class='lang_li'>
+                                <a href="#">Az</a>
+                            </li>
+                        </ul>
+
+                        <div class="mobile_menu">
+                            <span class="full mobile_in"></span>
+                            <span class="full mobile_in"></span>
+                            <span class="full mobile_in"></span>
                         </div>
 
+                    </div>
+                    <!-- header_right end -->
+                    <div class="header_right2">
                         <ul class="header_ul">
                             <li><a href="#">Onlayn sığorta</a></li>
                             <li><a href="#">Faydalı</a></li>
                             <li><a href="#">Əlaqə</a></li>
-                        </ul>  
-
+                        </ul>
                     </div>
-
-                    <div class="header_image">
-                        <a href="#"><img src="img/logo_new.jpg"></a>
-                    </div>
-                    <div class="center">
-                        <header class="full">
-                            <div class="header_right">
-
-
-                                <ul class="full header_right_ul">
-                                    <li>
-                                        <button class="header_button"></button>
-                                    </li>
-                                    <li class='lang_li'>
-                                        <a href="#">Az</a>
-                                    </li>
-                                </ul>
-
-                                <div class="mobile_menu">
-                                    <span class="full mobile_in"></span>
-                                    <span class="full mobile_in"></span>
-                                    <span class="full mobile_in"></span>
-                                </div>
-
-                            </div>
-                            <!-- header_right end -->
-                            <div class="header_right2">
-                                <ul class="header_ul">
-                                    <li><a href="#">Onlayn sığorta</a></li>
-                                    <li><a href="#">Faydalı</a></li>
-                                    <li><a href="#">Əlaqə</a></li>
-                                </ul>
-                            </div>
-                            <!-- header_right2 end -->
-                        </div>
-                    </header>
-                    <!-- header end -->
+                    <!-- header_right2 end -->
                 </div>
-            </div>
+            </header>
+            <!-- header end -->
         </div>
-        <main class="full backgorund_main">
+    </div>
+</div>
+<main class="full backgorund_main">
