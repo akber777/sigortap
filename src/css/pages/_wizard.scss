@@ -206,22 +206,22 @@
 }
 .form-header-classic .form-wizard-step.activated .form-wizard-step-icon {
 	background: #fff; 
-	border: 1px solid #6753D8; 
-	color: #6753D8; 
+	border: 1px solid $colorBtn; 
+	color: $colorBtn; 
 	line-height: 38px;
 }
 .form-header-classic .form-wizard-step.active .form-wizard-step-icon {
 	width: 48px; 
 	height: 48px; 
 	margin-top: 0; 
-	background: #6753D8; 
+	background: $colorBtn; 
 	font-size: 22px; 
 	line-height: 48px;
 }
 
 .form-header-classic .form-wizard-step p { color: #ccc; }
-.form-header-classic .form-wizard-step.activated p { color: #6753D8; }
-.form-header-classic .form-wizard-step.active p { color: #6753D8; }
+.form-header-classic .form-wizard-step.activated p { color: $colorBtn; }
+.form-header-classic .form-wizard-step.active p { color: $colorBtn; }
 
 /** Form header Classic **/
 
@@ -397,12 +397,14 @@
 }
 
 .form-wizard h4 {
+	position: relative;
 	float:left;
 	font-size: 20px;
 	font-weight: 300;
-	color: #6753D8;
+	color: $colorBtn;
 	line-height: 26px;
 	width:100%;
+	margin-top: 25px;
 }
 .form-wizard h4  span{
 	float:right;
@@ -494,7 +496,7 @@
 	margin: 25px auto;
 }
 .form-wizard .progress-bar {
-	background-color: #6753D8;
+	background-color: $colorBtn;
 }
 
 .form-wizard-steps{ 
@@ -517,7 +519,7 @@
 	top: 0; 
 	left: 0; 
 	height: 1px; 
-	background: #6753D8; 
+	background: $colorBtn; 
 }
 
 .form-wizard-tolal-steps-2 .form-wizard-step { 
