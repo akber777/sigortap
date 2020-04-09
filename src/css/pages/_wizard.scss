@@ -471,7 +471,7 @@
 .form-wizard .btn.btn-submit:focus,
 .form-wizard .btn.btn-submit:active:focus, 
 .form-wizard .btn.btn-submit.active:focus { 
-	background: #6753D8; 
+	background: #4e90c7; 
 }
 
 .form-wizard .btn.btn-previous,
@@ -565,7 +565,7 @@
 	border:0px !important
 }
 
-.form-wizard-buttons { text-align: right; }
+.form-wizard-buttons { text-align: right; margin-top: 75px;}
 
 .form-wizard .input-error { border-color: red;}
 
@@ -657,6 +657,35 @@
 	position: relative;
 	z-index: 2;
 }
+
+
+.radio-inline{
+	position: relative;
+	float: left;
+	width: auto;
+	margin-right: 44px;
+}
+
+
+.gender{
+	position: relative;
+	float: left;
+	width: 98px;
+}
+
+
+
+.open{
+	position: relative;
+	float: left;
+	width: 151px;
+}
+
+
+label{
+	margin-right: 23px;
+}
+
 
 
 }
