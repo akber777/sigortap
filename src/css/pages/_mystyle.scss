@@ -3035,7 +3035,7 @@ input[type=number]::-webkit-inner-spin-button{
 
 
 
-.myinputstyle{
+.input{
     position: relative;
     float: left;
     width: 100%;
@@ -3059,7 +3059,7 @@ input[type=number]::-webkit-inner-spin-button{
 }
 
 
-.myinputstyle::placeholder{
+.input::placeholder{
     color:#062232;
     font-size: 16px;
 
